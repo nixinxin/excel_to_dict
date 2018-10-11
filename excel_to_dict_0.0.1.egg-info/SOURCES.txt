@@ -1,0 +1,9 @@
+README.md
+setup.py
+excel_to_dict/__init__.py
+excel_to_dict/excel_to_dict.py
+excel_to_dict_0.0.1.egg-info/PKG-INFO
+excel_to_dict_0.0.1.egg-info/SOURCES.txt
+excel_to_dict_0.0.1.egg-info/dependency_links.txt
+excel_to_dict_0.0.1.egg-info/requires.txt
+excel_to_dict_0.0.1.egg-info/top_level.txt

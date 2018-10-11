@@ -1,1 +1,3 @@
 .idea/
+build/
+excel_to_dict.egg-info/
