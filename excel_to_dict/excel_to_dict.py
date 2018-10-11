@@ -30,9 +30,10 @@ def excel_to_dict(filename, sheet_name:int, header:int):
 
 
 if __name__ == '__main__':
-    import os
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    data_path = os.path.join(BASE_DIR, 'data', 'test.xlsx')
-    response = excel_to_dict(data_path, 0, 2)
-    for i in response:
-        print(i)
+    pass
+    # import os
+    # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    # data_path = os.path.join(BASE_DIR, 'data', 'test.xlsx')
+    # response = excel_to_dict(data_path, 0, 2)
+    # for i in response:
+    #     print(i)

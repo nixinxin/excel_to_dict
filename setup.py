@@ -9,7 +9,7 @@ requires = [
 
 setuptools.setup(
     name="excel_to_dict",
-    version="0.0.1",
+    version="0.0.3",
     author="nixinxin",
     author_email="1025464043@qq.com",
     description="A small package to convert records in excel into dict",
