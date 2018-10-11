@@ -1,15 +1,16 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding='utf8') as fh:
     long_description = fh.read()
 
 requires = [
     "pandas >= 0.23.4",
+    "xlrd >= 0.9.0",
 ]
 
 setuptools.setup(
     name="excel_to_dict",
-    version="0.0.3",
+    version="0.0.8",
     author="nixinxin",
     author_email="1025464043@qq.com",
     description="A small package to convert records in excel into dict",
