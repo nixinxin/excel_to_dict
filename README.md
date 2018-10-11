@@ -1,1 +1,1 @@
-A small package to convert records in excel into dict.
+A small package to convert record in excel into dict.
