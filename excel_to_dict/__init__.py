@@ -10,6 +10,8 @@ def parse_format(arg):
     :return:
     """
     result = str(arg).strip()
+    if result == 'nan':
+        result = None
     return result
 
 
