@@ -9,10 +9,15 @@ def parse_format(arg):
     :param arg:
     :return:
     """
-    result = str(arg).strip()
-    if result == 'nan':
-        result = None
-    return result
+    if isinstance(arg, str):
+        arg = str(arg).strip()
+    elif isinstance(arg, float) and str(arg) != 'nan':
+        arg = int(arg)
+    elif isinstance(arg, int):
+        pass
+    else:
+        arg = None
+    return arg
 
 
 def excel_to_dict(filename, sheet_name: int, header: int):
@@ -30,7 +35,7 @@ def excel_to_dict(filename, sheet_name: int, header: int):
         headers = list(data.head())
         for value in values:
             value = parse_format(value)
-            result[headers[column_num]] = value
+            result[headers[column_num].strip()] = value
             column_num += 1
         yield result
 
