@@ -29,15 +29,12 @@ def excel_to_dict(filename, sheet_name: int, header: int):
     :return: yield dict
     """
     data = pandas.read_excel(filename, sheet_name=sheet_name, header=header)
-    for values in data.get_values():
-        result = {}
-        column_num = 0
-        headers = list(data.head())
-        for value in values:
-            value = parse_format(value)
-            result[headers[column_num].strip()] = value
-            column_num += 1
-        yield result
+    data = data.to_dict()
+    for item in range(0, len(list(data.values())[0])):
+        temp_dict = {}
+        for key in data.keys():
+            temp_dict[key] = data[key][item]
+        yield temp_dict
 
 
 if __name__ == '__main__':
